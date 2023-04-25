@@ -1,5 +1,5 @@
 # flappy-bird
-A very basic remake of flappy bird in Unity. Not intended to be a complete game, but rather a quickstart into game dev with Unity.
+A very basic remake of flappy bird in Unity. Not intended to be a complete game, but rather a quickstart into game dev with Unity. You can play the game over here: https://qanpi.github.io/flappy-bird/ 
 
 ## Future improvements
 - [ ] Main screen / starting UI
