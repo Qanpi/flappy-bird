@@ -3,7 +3,7 @@ A very basic remake of flappy bird in Unity. Not intended to be a complete game,
 
 ## Future improvements
 - [ ] Main screen / starting UI
-- [ ] Variety in levels (e.g. )
+- [ ] Variety in levels (e.g. other birds as obstacles, moving pipes, etc.)
 - [ ] Ability to store high score
 - [ ] Sound effects
 - [ ] Particle system for (e.g. clouds, wind, etc.)
