@@ -19,7 +19,7 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isAlive) { return;  }
+        if (!isAlive) { return; }
 
         Quaternion look = Quaternion.Slerp(Quaternion.AngleAxis(-45, Vector3.forward), Quaternion.AngleAxis(45, Vector3.forward), rigidBody.velocity.y);
         rigidBody.SetRotation(look);
@@ -28,6 +28,13 @@ public class BirdScript : MonoBehaviour
         {
             Hop();
         }
+
+    }
+
+    private void Die()
+    {
+        logic.GameOver();
+        isAlive = false;
     }
 
     private void Hop()
@@ -37,7 +44,11 @@ public class BirdScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        logic.GameOver();
-        isAlive = false;
+        Die();
+    }
+
+    private void OnBecameInvisible()
+    {
+        Die();
     }
 }
